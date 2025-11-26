@@ -1,0 +1,4 @@
+ezdxf>=0.18.0
+numpy>=1.20.0
+matplotlib>=3.5.0
+pillow>=8.0.0
