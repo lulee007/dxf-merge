@@ -29,7 +29,7 @@ jobs:
         pyinstaller --noconfirm --onefile --windowed --name="DXF合并工具" --add-data="dxf_processor.py;." --add-data="dxf_renderer.py;." --hidden-import="PIL" gui_app.py
         
     - name: Upload artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: DXF合并工具
         path: dist/DXF合并工具.exe
