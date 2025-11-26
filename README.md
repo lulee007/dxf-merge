@@ -35,19 +35,17 @@ python gui_app.py
 4. 点击"开始处理"进行合并
 5. 生成并查看预览图
 
+#### 界面
+![ui](data/ui.png)
+##### 放大效果
+![preview](data/preview-result.png)
+
 ### 方法2：命令行
 
 ```bash
-python main.py file1.dxf file2.dxf file3.dxf output.dxf
+python main.py ./data/静电消除正.dxf ./data/静电消除反.dxf ./data/智能温控正.dxf output.dxf
 ```
 
-### 方法3：默认配置
-
-直接运行 [main.py](file:///D:/Mydata/github/dxf-merge/main.py) 将使用默认配置处理示例文件：
-
-```bash
-python main.py
-```
 
 ## 排样算法说明
 
@@ -65,7 +63,7 @@ python main.py
 ```bash
 build_exe.bat
 ```
-
+或者
 ```bat
 pyinstaller --noconfirm --onefile --windowed --name="DXF合并工具"     --add-data="dxf_processor.py;."     --add-data="dxf_renderer.py;."     --hidden-import="PIL"      gui_app.py
 ```
